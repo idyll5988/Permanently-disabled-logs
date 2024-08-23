@@ -33,4 +33,4 @@ function log() {
 }
 cd ${MODDIR}/scripts/ll/log
 log
-(while true;do su -c stop logd;sleep 10;done)>/dev/null 2>&1&
+(while true;do su root -c su -c stop logd;sleep 10;done)>/dev/null 2>&1&
